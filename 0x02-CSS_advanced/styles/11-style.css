@@ -1,4 +1,4 @@
-/* Custom properties in root element to use font-weight css variables */
+/*  More styling for section-tagline */
 
 html {
   scroll-behavior: smooth;
@@ -13,8 +13,8 @@ html {
   --color-dark-grey: #353535;
   --text-color: var(--color-black);
 
-  --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
@@ -24,6 +24,14 @@ html {
 
   --font-weight-regular: 400;
   --font-weight-bold: 700;
+
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+
+  --section-header-align: center;
+
+  --section-tagline-transform: uppercase;
 }
 
 body {
@@ -31,6 +39,7 @@ body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
 }
 
 h1,
@@ -45,6 +54,7 @@ h6 {
 
 a {
   color: var(--text-color);
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -55,6 +65,14 @@ a {
   color: var(--color-primary);
 }
 
+.section-header {
+  text-align: var(--section-header-align);
+}
+
 .section-tagline {
   color: var(--color-primary);
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
 }
+
